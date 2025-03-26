@@ -2,7 +2,16 @@
 # 机场订阅
 proxy-providers:
   Airport1:
-    url: "机场订阅"
+    url: "https://no3-svip.urlapi-dodo.cyou/s?t=3d2c3f14c4c5775c051ac45b7c88c869"
+    type: http
+    interval: 86400
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 300
+    proxy: 直连
+  MyStor:
+    url: "https://jmssub.net/members/getsub.php?service=496505&id=1d443f7d-fd34-4973-8fa9-0347d79cb403"
     type: http
     interval: 86400
     health-check:
